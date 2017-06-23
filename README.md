@@ -6,14 +6,18 @@ Our implementation is a **proof of concept** that demonstrates the idea of runti
 
 ## See an example
 
-The example below shows a screenshot of Java method *paintEntries*. It is a recursive method that draws a [treemap](https://en.wikipedia.org/wiki/Treemapping) on a panel to visualize a hierarchy. Try out the [interactive example](examples/paintEntries/paintEntries.html).
+<img alt="Method Execution Report for method paintEntries" src="images/paintentries.png" width="500">
 
-![Method Execution Report for method paintEntries](https://fabian-beck.github.io/Method-Execution-Reports/images/paintentries.png)
+The example shows a screenshot of Java method *paintEntries*. It is a recursive method that draws a [treemap](https://en.wikipedia.org/wiki/Treemapping) on a panel to visualize a hierarchy. Try out the [interactive example](examples/paintEntries/paintEntries.html).
+
+A [second example](examples/computeCentroids/computeCentroids.html) describes Java method *computeCentroids*, which is executed as part of a [k-means clustering](https://en.wikipedia.org/wiki/K-means_clustering) run.
 
 ## Create your own reports
 
 ## Learn more
 
 ### Publication
+
+### Report Specification
 
 ### User Study
