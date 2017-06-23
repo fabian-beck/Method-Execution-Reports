@@ -8,7 +8,7 @@ Our implementation is a **proof of concept** that demonstrates the idea of runti
 
 The example below shows a screenshot of Java method *paintEntries*. It is a recursive method that draws a [treemap](https://en.wikipedia.org/wiki/Treemapping) on a panel to visualize a hierarchy.
 
-![Method Execution Report for method paintEntries](https://github.com/fabian-beck/Method-Execution-Reports/blob/master/images/paintentries.png)
+![Method Execution Report for method paintEntries](https://fabian-beck.github.io/Method-Execution-Reports/images/paintentries.png)
 
 ## Create your own reports
 
