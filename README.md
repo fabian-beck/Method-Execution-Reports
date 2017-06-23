@@ -18,8 +18,7 @@ coming soon ...
 
 ## Learn more
 
-Website: https://fabian-beck.github.io/Method-Execution-Reports/ 
-GitHub project: https://github.com/fabian-beck/Method-Execution-Reports 
+Check our [website](https://fabian-beck.github.io/Method-Execution-Reports/) or [GitHub project](https://github.com/fabian-beck/Method-Execution-Reports)
 
 coming soon ...
 
