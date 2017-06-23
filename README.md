@@ -14,10 +14,14 @@ A [second example](examples/computeCentroids/computeCentroids.html) describes Ja
 
 ## Create your own reports
 
+coming soon ...
+
 ## Learn more
+
+conming soon ...
 
 ### Publication
 
-### Report Specification
+### Report specification
 
-### User Study
+### User study
