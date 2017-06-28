@@ -30,6 +30,8 @@ We published a paper at VISSOFT 2017 that describe the details of our approach. 
 
 ### Report specification
 
+The reports are based on decision graphs that determine the content of the reports and connected text templates that define the exact phrasing. As a documentation of this, we provide graphs and templates in [specification document](docs/report_specification.pdf) - the paper (see above) gives an explanation how to read this specification.
+
 ### User study
 
 
