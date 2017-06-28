@@ -18,11 +18,15 @@ coming soon ...
 
 ## Learn more
 
-Check our [website](https://fabian-beck.github.io/Method-Execution-Reports/) or [GitHub project](https://github.com/fabian-beck/Method-Execution-Reports)
-
-coming soon ...
+We published a paper at VISSOFT 2017 that describe the details of our approach. As supplemental material to that, we also provide a detailed specification of the report generation and results from a small user study that we performed to get developers' feedback on our idea.
 
 ### Publication
+
+**Abstract:** To obtain an accurate understanding of a program behavior, developers use a set of tools and techniques such as logging outputs, debuggers, profilers, and visualizations. These support an in-depth analysis of the program behavior, each approach focusing on a different aspect. What is missing, however, is an approach to get an overview of a program execution. As a first step to fill this gap, this paper presents an approach to generate Method Execution Reports. Each report summarizes the execution of a selected method for a specific execution of the program using natural-language text and embedded visualizations. A report provides an overview of the dynamic calls and time consumption related to the selected method. We present a framework to generate these reports and discuss the specific instantiation and phrasing we have chosen. Our results comprise feedback from developers discussing the understandability and usefulness of our approach and a task-based comparison to state-of-the-art solutions.
+
+**Reference:** Beck, Fabian; Siddiqui, Hafiz Ammar; Bergel, Alexandre; Weiskopf, Daniel: Method Execution Reports: Generating Text and Visualization to Describe Program Behavior. In: Proceedings of the 5th IEEE Working Conference on Software Visualization. IEEE, 2017.
+
+**Paper PDF:** coming soon...
 
 ### Report specification
 
