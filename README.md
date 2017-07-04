@@ -14,7 +14,7 @@ A [second example](examples/computeCentroids/computeCentroids.html) describes Ja
 
 ## Create your own reports
 
-Reports can be created easily with a simple two steps process.
+Reports can be created easily with a simple two steps process using [jar files](https://github.com/fabian-beck/Method-Execution-Reports/tree/master/runnable%20jar%20files)
 
 ### 1. Method Profiling
 First step is profiling the desired method to collect all the necessary details during its runtime. Profiling can be done in any IDE that supports execution of Java program with virtual machine arguments (e.g. Eclipse IDE). To profile a method, simply execute its Java program and use the **MER_Profiler.jar** as Java Agent in its virtual machine argument. Pass the profiling method as an argument to **MER_Profiler.jar**.
