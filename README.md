@@ -14,7 +14,32 @@ A [second example](examples/computeCentroids/computeCentroids.html) describes Ja
 
 ## Create your own reports
 
-coming soon ...
+Reports can be created easily with a simple two steps process.
+
+### 1. Method Profiling
+First step is profiling the desired method to collect all the necessary details during its runtime. Profiling can be done in any IDE that supports execution of Java program with virtual machine arguments (e.g. Eclipse IDE). To profile a method, simply execute its Java program and use the *MER_Profiler.jar* as Java Agent in its virtual machine argument. Pass the profiling method as an argument to *MER_Profiler.jar*.
+
+*Syntax*
+`-javaagent:"<absolute path>/MER_Profiler.jar"=<package name>.<class name>.<method name>`
+
+*Example*
+`-javaagent:/Users/Guest/workspace/Jars/MER_Profiler.jar=de.uni_stuttgart.infovis.TreeMap.drawTreeMap`
+
+After the termination of Java program, profiler will output an *xml file* which will contain all the profiling data and details of marked method during its runtime. The name of the *xml file* will be same as the name of the method which is profiled (e.g. in above example the file will be drawTreeMap.xml) and it will be saved in the project directory of its Java program.
+
+### 2. Report Generation
+The next and final step is to generate an execution report of method with the help of profiling data gathered during its execution (e.g. *xml file*). To generate a report, simply execute runnable jar file *MER_Generator*. Pass the *xml file* and path of its Java program directory (e.g. location of source code) as arguments.
+
+*Syntax*
+`java -jar <path>/MER_Generator.jar <path>/<method name>.xml <path>/<project name>`
+
+*Example*
+`java -jar MER_Generator.jar workspace/InfoVis/drawTreeMap.xml workspace/InfoVis`
+
+It will create a directory “www/<method name>” in the working directory with the report (e.g. in above example the report will be in www/drawTreeMap/drawTreeMap.html).
+
+### Creating reports using source code
+Both profiler (MER_Profiler.jar) and generator (MER_Generator.jar) source code can be used directly (using an IDE e.g. Eclipse IDE) to profile and generate reports instead of using their jar files.
 
 ## Learn more
 
@@ -33,5 +58,3 @@ We published a paper at VISSOFT 2017 that describe the details of our approach. 
 The reports are based on decision graphs that determine the content of the reports and connected text templates that define the exact phrasing. As a documentation of this, we provide graphs and templates in [specification document](docs/report_specification.pdf) - the paper (see above) gives an explanation how to read this specification.
 
 ### User study
-
-
