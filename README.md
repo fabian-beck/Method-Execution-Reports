@@ -58,3 +58,10 @@ We published a paper at VISSOFT 2017 that describe the details of our approach. 
 The reports are based on decision graphs that determine the content of the reports and connected text templates that define the exact phrasing. As a documentation of this, we provide graphs and templates in [specification document](docs/report_specification.pdf) - the paper (see above) gives an explanation how to read this specification.
 
 ### User study
+
+In a small study, we asked eleven developers to provide feedback on the approach. The developers studied reports of different systems  and filled a short questionnaire.
+
+* The blank [questionnaire](user_study/questionnaire.pdf)
+* The [answers](user_study/answers.zip) of the developers
+
+The paper contains more details on the study design and a summary of the results.
