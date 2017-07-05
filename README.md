@@ -65,3 +65,11 @@ In a small study, we asked eleven developers to provide feedback on the approach
 * The [answers](user_study/answers.zip) of the developers
 
 The paper contains more details on the study design and a summary of the results.
+
+### Team
+
+* Fabian Beck, University of Duisburg-Essen
+* Hafiz Ammar Siddiqui, University of Stuttgart
+* Alexandre Bergel, University of Chile
+* Daniel Weiskopf, University of Stuttgart
+
