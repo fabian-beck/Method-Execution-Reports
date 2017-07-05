@@ -1,8 +1,8 @@
 ## What this is about
 
-Documentation describes software usually from a static perspective. **But what if we could get a human-readable and understandable documentation for a specific run of a software?** Currently, we have to investigate runtime details in complex views of profilers and debuggers. With our Method Execution Reports we now provide a **short and understandable summary of a program run from the perspective of a single method of interest**. We automatically create the interactive web-based documents that merge highly adaptive texts and graphics. They summarize data on call structures, recursion, and performance. The reports answer many questions about the runtime behavior of the method and might act as a better starting point for a detailed analysis using profilers and debuggers.
+Documentation describes software usually from a static perspective. **But what if we could get a human-readable and understandable documentation for a specific run of a software?** Currently, we have to investigate runtime details in complex views of profilers and debuggers. Method Execution Reports now provide a **short and understandable summary of a program run from the perspective of a single method of interest**. We automatically create the interactive web-based documents that merge highly adaptive texts and graphics. They summarize data on call structures, recursion, and performance. The reports answer many questions about the runtime behavior of the method and might act as a better starting point for a detailed analysis using profilers and debuggers.
 
-Our implementation is a **proof of concept** that demonstrates the idea of runtime reports **for Java methods** - we invite everybody to pick up our ideas and implement similar reports for extended scenarios. To learn more, please have a look at our VISSOFT 2017 paper that describes the scientific background (see below).
+Our implementation is a **proof of concept** that demonstrates the idea of runtime reports **for Java methods** - we invite everybody to pick up our ideas and implement similar reports for extended scenarios. 
 
 ## See an example
 
@@ -17,7 +17,7 @@ A [second example](examples/computeCentroids/computeCentroids.html) describes Ja
 Reports can be created easily with a simple two steps process using [jar files](https://github.com/fabian-beck/Method-Execution-Reports/tree/master/runnable%20jar%20files)
 
 ### 1. Method Profiling
-First step is profiling the desired method to collect all the necessary details during its runtime. Profiling can be done in any IDE that supports execution of Java program with virtual machine arguments (e.g. Eclipse IDE). To profile a method, simply execute its Java program and use the **MER_Profiler.jar** as Java Agent in its virtual machine argument. Pass the profiling method as an argument to **MER_Profiler.jar**.
+The first step is profiling the desired method to collect all the necessary details during its runtime. Profiling can be done in any IDE that supports execution of Java program with virtual machine arguments (e.g., Eclipse IDE). To profile a method, simply execute its Java program and use the **MER_Profiler.jar** as Java Agent in its virtual machine argument. Pass the profiling method as an argument to **MER_Profiler.jar**.
 
 **Syntax**
 `-javaagent:"<absolute path>/MER_Profiler.jar"=<package name>.<class name>.<method name>`
@@ -25,10 +25,10 @@ First step is profiling the desired method to collect all the necessary details 
 **Example**
 `-javaagent:/Users/Guest/workspace/MER_Profiler.jar=de.uni_stuttgart.infovis.TreeMap.drawTreeMap`
 
-After the termination of Java program, profiler will output an **xml file** which will contain all the profiling data and details of marked method during its runtime. The name of the **xml file** will be same as the name of the method which is profiled (e.g. in above example the file will be drawTreeMap.xml) and it will be saved in the project directory of its Java program.
+After the termination of Java program, the profiler will output an **xml file** which will contain all the profiling data and details of marked method during its runtime. The name of the **xml file** will be same as the name of the method which is profiled (e.g., in the above example, the file will be drawTreeMap.xml) and it will be saved in the project directory of its Java program.
 
 ### 2. Report Generation
-The next and final step is to generate an execution report of method with the help of profiling data gathered during its execution (e.g. **xml file**). To generate a report, simply execute runnable jar file **MER_Generator**. Pass the **xml file** and path of its Java program directory (e.g. location of source code) as arguments.
+The next and final step is to generate an execution report of method with the help of profiling data gathered during its execution (e.g., **xml file**). To generate a report, simply execute runnable jar file **MER_Generator**. Pass the **xml file** and path of its Java program directory (e.g., location of source code) as arguments.
 
 **Syntax**
 `java -jar <path>/MER_Generator.jar <path>/<method name>.xml <path>/<project name>`
@@ -36,10 +36,7 @@ The next and final step is to generate an execution report of method with the he
 **Example**
 `java -jar MER_Generator.jar workspace/InfoVis/drawTreeMap.xml workspace/InfoVis`
 
-It will create a directory “www/<method name>” in the working directory with the report (e.g. in above example the report will be in www/drawTreeMap/drawTreeMap.html).
-
-### Creating reports using source code
-Both profiler (MER_Profiler.jar) and generator (MER_Generator.jar) source code can be used directly (using an IDE e.g. Eclipse IDE) to profile and generate reports instead of using their jar files.
+It will create a directory “www/<method name>” in the working directory with the report (e.g., in the above example, the report will be in www/drawTreeMap/drawTreeMap.html).
 
 ## Learn more
 
