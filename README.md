@@ -48,7 +48,7 @@ We published a paper at VISSOFT 2017 that describe the details of our approach. 
 
 **Reference:** Beck, Fabian; Siddiqui, Hafiz Ammar; Bergel, Alexandre; Weiskopf, Daniel: Method Execution Reports: Generating Text and Visualization to Describe Program Behavior. In: Proceedings of the 5th IEEE Working Conference on Software Visualization. IEEE, 2017.
 
-**Paper PDF:** coming soon...
+**Paper PDF:** https://www.vis.wiwi.uni-due.de/uploads/tx_itochairt3/publications/vissoft17-method_execution_reports.pdf
 
 ### Report specification
 
